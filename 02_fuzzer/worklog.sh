@@ -1,0 +1,1 @@
+gcc -o license_1 license_1.c

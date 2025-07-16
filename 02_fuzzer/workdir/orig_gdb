@@ -1,0 +1,77 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./license_1...
+(No debugging symbols found in ./license_1)
+(gdb) Dump of assembler code for function main:
+   0x0000000000001189 <+0>:	endbr64 
+   0x000000000000118d <+4>:	push   %rbp
+   0x000000000000118e <+5>:	mov    %rsp,%rbp
+   0x0000000000001191 <+8>:	push   %rbx
+   0x0000000000001192 <+9>:	sub    $0x28,%rsp
+   0x0000000000001196 <+13>:	mov    %edi,-0x24(%rbp)
+   0x0000000000001199 <+16>:	mov    %rsi,-0x30(%rbp)
+   0x000000000000119d <+20>:	cmpl   $0x2,-0x24(%rbp)
+   0x00000000000011a1 <+24>:	jne    0x1242 <main+185>
+   0x00000000000011a7 <+30>:	mov    -0x30(%rbp),%rax
+   0x00000000000011ab <+34>:	add    $0x8,%rax
+   0x00000000000011af <+38>:	mov    (%rax),%rax
+   0x00000000000011b2 <+41>:	mov    %rax,%rsi
+   0x00000000000011b5 <+44>:	lea    0xe48(%rip),%rax        # 0x2004
+   0x00000000000011bc <+51>:	mov    %rax,%rdi
+   0x00000000000011bf <+54>:	mov    $0x0,%eax
+   0x00000000000011c4 <+59>:	call   0x1090 <printf@plt>
+   0x00000000000011c9 <+64>:	movl   $0x0,-0x18(%rbp)
+   0x00000000000011d0 <+71>:	movl   $0x0,-0x14(%rbp)
+   0x00000000000011d7 <+78>:	jmp    0x11f9 <main+112>
+   0x00000000000011d9 <+80>:	mov    -0x30(%rbp),%rax
+   0x00000000000011dd <+84>:	add    $0x8,%rax
+   0x00000000000011e1 <+88>:	mov    (%rax),%rdx
+   0x00000000000011e4 <+91>:	mov    -0x14(%rbp),%eax
+   0x00000000000011e7 <+94>:	cltq   
+   0x00000000000011e9 <+96>:	add    %rdx,%rax
+   0x00000000000011ec <+99>:	movzbl (%rax),%eax
+   0x00000000000011ef <+102>:	movsbl %al,%eax
+   0x00000000000011f2 <+105>:	add    %eax,-0x18(%rbp)
+   0x00000000000011f5 <+108>:	addl   $0x1,-0x14(%rbp)
+   0x00000000000011f9 <+112>:	mov    -0x14(%rbp),%eax
+   0x00000000000011fc <+115>:	movslq %eax,%rbx
+   0x00000000000011ff <+118>:	mov    -0x30(%rbp),%rax
+   0x0000000000001203 <+122>:	add    $0x8,%rax
+   0x0000000000001207 <+126>:	mov    (%rax),%rax
+   0x000000000000120a <+129>:	mov    %rax,%rdi
+   0x000000000000120d <+132>:	call   0x1080 <strlen@plt>
+   0x0000000000001212 <+137>:	cmp    %rax,%rbx
+   0x0000000000001215 <+140>:	jb     0x11d9 <main+80>
+   0x0000000000001217 <+142>:	cmpl   $0x394,-0x18(%rbp)
+   0x000000000000121e <+149>:	jne    0x1231 <main+168>
+   0x0000000000001220 <+151>:	lea    0xdf3(%rip),%rax        # 0x201a
+   0x0000000000001227 <+158>:	mov    %rax,%rdi
+   0x000000000000122a <+161>:	call   0x1070 <puts@plt>
+   0x000000000000122f <+166>:	jmp    0x1251 <main+200>
+   0x0000000000001231 <+168>:	lea    0xdf2(%rip),%rax        # 0x202a
+   0x0000000000001238 <+175>:	mov    %rax,%rdi
+   0x000000000000123b <+178>:	call   0x1070 <puts@plt>
+   0x0000000000001240 <+183>:	jmp    0x1251 <main+200>
+   0x0000000000001242 <+185>:	lea    0xde8(%rip),%rax        # 0x2031
+   0x0000000000001249 <+192>:	mov    %rax,%rdi
+   0x000000000000124c <+195>:	call   0x1070 <puts@plt>
+   0x0000000000001251 <+200>:	mov    $0x0,%eax
+   0x0000000000001256 <+205>:	mov    -0x8(%rbp),%rbx
+   0x000000000000125a <+209>:	leave  
+   0x000000000000125b <+210>:	ret    
+End of assembler dump.
+(gdb) 
+quit
